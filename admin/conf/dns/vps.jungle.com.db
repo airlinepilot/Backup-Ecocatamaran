@@ -1,0 +1,22 @@
+$TTL 14400
+@    IN    SOA    ns1.domain.tld.    root.vps.jungle.com. (
+                                            2019031903
+                                            7200
+                                            3600
+                                            1209600
+                                            180 )
+
+@	14400	IN	NS		ns1.domain.tld.
+@	14400	IN	NS		ns2.domain.tld.
+@	14400	IN	A		103.90.226.78
+www	14400	IN	A		103.90.226.78
+ftp	14400	IN	A		103.90.226.78
+mail	14400	IN	A		103.90.226.78
+smtp	14400	IN	A		103.90.226.78
+pop	14400	IN	A		103.90.226.78
+imap	14400	IN	A		103.90.226.78
+@	14400	IN	MX	10	mail.vps.jungle.com.
+@	14400	IN	TXT		"v=spf1 a mx ip4:103.90.226.78 ~all"
+_dmarc	14400	IN	TXT		"v=DMARC1; p=none"
+_domainkey	14400	IN	TXT		"t=y; o=~;"
+mail._domainkey	14400	IN	TXT		"v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDa0uViTEBeQtuLH9dU15gV/QeD5UCrBl7skOklc6DmSvTuIWyat6VrWcBtrMQv9hH6u/u5geKGrRcs5uzlvKP9z6tmpmKmHuoVxRTNqS+5FWgfUSEjlXQ8ghG31UcAJ5DGFXStw6WepIc0yl5f7vQVd61zl9iiVy+VlH++QLedqwIDAQAB"

@@ -1,0 +1,4 @@
+location ~ "^/\.well-known/acme-challenge/(.*)$" {
+    default_type text/plain;
+    return 200 "$1.p_U8M2InS5Kz4P9sSTs7dw1SII22hEBC4ADy8aDZ6uM";
+}
